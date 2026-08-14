@@ -1,7 +1,7 @@
 {
   "name": "@deepseek-ai/dsh-desktop",
   "description": "Electron desktop shell for DeepSeek Harness: boots the harness host in-process (the web composition minus HTTP) and serves the built web frontend over app:// with RPC over IPC — zero network ports",
-  "version": "0.1.0-rc.7",
+  "version": "0.1.0-rc.6",
   "private": true,
   "type": "module",
   "main": "lib/main.js",

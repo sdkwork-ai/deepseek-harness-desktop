@@ -1,7 +1,7 @@
 {
   "name": "@deepseek-ai/dsh-desktop-app",
   "description": "The dsh desktop-surface bundle: the Electron patch layer over dsh-base + dsh-web-app (HTTP webserver swapped for the desktop carrier, RPC over IPC, zero ports) plus the desktop surface prompt glue",
-  "version": "0.1.0-rc.7",
+  "version": "0.1.0-rc.6",
   "publishConfig": {
     "access": "public"
   },

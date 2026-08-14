@@ -1,7 +1,7 @@
 {
   "name": "@deepseek-ai/dsh-host-desktop-carrier",
   "description": "The Electron desktop carrier: a webServer-service-shaped route/fallback/index-tap registry driven by the app:// protocol handler instead of node:http, so the web composition (client-modules, frontend-static, ui-theme) mounts unchanged over the desktop shell",
-  "version": "0.1.0-rc.7",
+  "version": "0.1.0-rc.6",
   "publishConfig": {
     "access": "public"
   },
