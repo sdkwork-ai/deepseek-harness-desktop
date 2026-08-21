@@ -1,13 +1,15 @@
 packages:
-  - vendor/*
-  - packages/*/*
+  - "vendor/*"
+  - "packages/*/*"
+  - "native/landlock-run"
+  - "native/landlock-run/packages/*"
+  - "apps/*"
+  - "website"
+  - "examples"
+  - "python/sdk-runtime"
   # The Landlock launcher is developed with its harness consumers but keeps
   # its native build and publication scripts under native/landlock-run.
-  - native/landlock-run
-  - native/landlock-run/packages/*
   # Product assemblies over the package tier; apps/cli owns the `dsh` bin.
-  - apps/*
-  - website
   # The runnable demo leaves join as ONE workspace member: examples/package.json
   # declares the union of every leaf's cordis.yml plugins as workspace:*, so a
   # plain-node (`:lib`) boot of any leaf (examples/<leaf>/cordis.yml) resolves its
@@ -15,10 +17,8 @@ packages:
   # Members for DEPENDENCY RESOLUTION only — NOT build targets: tsdown's explicit
   # globs (vendor/*, packages/*/*) exclude them. See examples/AGENTS.md and the archived
   # run-ci-examples-from-built-lib Agent Note.
-  - examples
   # Deploy root of the single-exe build: a pure dependency manifest whose
   # closure is what the exe bundles and what the Python runtime distributes.
-  - python/sdk-runtime
 
 # Vendored framework packages keep their upstream semver ranges, while local
 # builds must resolve those matching names to this workspace's pinned sources.
